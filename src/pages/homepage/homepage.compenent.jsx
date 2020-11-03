@@ -1,35 +1,14 @@
 import React from 'react';
 
+import Categorie from '../../components/menu-categorie/categorie.component';
+
 import './homepage.styles.scss';
 
 const HomePage = () => (
     <div className="homepage">
         <h2>Choisissez une catégorie</h2>
         <div className="categorie">
-            <div className="categorie-item">
-                <div className="content">
-                    <h1 className="title">VILLAS</h1>
-                    <span className="subtitle">Détails</span>
-                </div>
-            </div>
-            <div className="categorie-item">
-                <div className="content">
-                    <h1 className="title">VILLAS</h1>
-                    <span className="subtitle">Détails</span>
-                </div>
-            </div>
-            <div className="categorie-item">
-                <div className="content">
-                    <h1 className="title">APPARTEMENT</h1>
-                    <span className="subtitle">Détails</span>
-                </div>
-            </div>
-            <div className="categorie-item">
-                <div className="content">
-                    <h1 className="title">STUDIO MODERNE</h1>
-                    <span className="subtitle">Détails</span>
-                </div>
-            </div>
+            <Categorie />
         </div>
 
         <h2>Choisissez une ville</h2>
