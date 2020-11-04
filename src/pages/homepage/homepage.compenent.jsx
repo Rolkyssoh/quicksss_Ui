@@ -4,8 +4,11 @@ import Categorie from '../../components/menu-categorie/categorie.component';
 
 import './homepage.styles.scss';
 
-const HomePage = () => (
-    <div className="homepage">
+const HomePage = (props) => {
+    console.log(props)
+
+    return (
+        <div className="homepage">
         <h2>Choisissez une catégorie</h2>
         <div className="categorie">
             <Categorie />
@@ -24,6 +27,7 @@ const HomePage = () => (
             </div>
         </div>
     </div>
-);
+    );
+};
 
 export default HomePage;
