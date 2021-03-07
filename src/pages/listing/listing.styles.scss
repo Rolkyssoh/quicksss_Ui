@@ -1,0 +1,26 @@
+// :host {
+//     display: contents;
+//   }
+
+.listing-page {
+    position:relative;
+    top:5em;
+    display: grid;
+    grid-template-columns: 1fr 4fr 2fr 1fr;
+    height: 100%;
+    overflow-y: hidden;
+    flex-direction: row;
+    // column-gap: 10px;
+    // row-gap: 15px;
+    border: solid 1px blue;
+}
+
+.premium {
+    border: solid 1px red;
+    display:grid;
+    grid-column: 3 / span 1;
+    margin-left:2em;
+    position:sticky;
+    top:10px
+}
+

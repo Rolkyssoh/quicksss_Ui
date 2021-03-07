@@ -1,0 +1,63 @@
+$sub-color: grey;
+$main-color: black;
+$marginBottom-divide: 70px;
+
+@mixin shrinkLabel {
+    top: -14px;
+    font-size: 12px;
+    color: $main-color;
+  }
+
+.new-container {
+    position: relative;
+    display: grid;
+    grid-template-columns: 1fr 4fr 3fr 1fr;
+    height: 100%;
+    overflow-y: hidden;
+}
+
+.new-annonce{
+    position: relative;
+    display: grid;
+    grid-column: 2 / span 1;
+    grid-template-rows: 25% 25% 25% auto;
+    overflow: hidden;
+    border: 1px solid red;
+
+    .details-part{
+      // width: 85%;
+      display: grid;
+      grid-template-columns: 2fr 2fr;
+      margin-bottom: $marginBottom-divide;
+      // align-content: center;
+      // align-items: center;
+      // justify-content: center;
+      // justify-items: center;
+      // flex-wrap: wrap;
+      // justify-content: space-between;
+      // position:relative
+    }
+    .general-part {
+      margin-bottom: $marginBottom-divide;
+    }
+    .detail-input {
+      display: flex;
+      flex-direction: column;
+      width: 75%;
+      // margin: 70px 0;
+    }
+    .description-part{
+      margin-bottom: $marginBottom-divide;
+    }
+}
+
+
+
+.description-area {
+  display: flex;
+  flex-direction: column;
+
+  .textarea{
+    padding: 20px;
+}
+}

@@ -1,0 +1,30 @@
+.container{
+    // width: 85%;
+    // display: flex;
+    // flex-wrap: wrap;
+    // justify-content: space-between;
+    // position: relative;
+    display: flex;
+    flex-direction: column;
+    height: 300px;
+    margin: 0 7.5px 15px;
+    width: 220px;
+    border-radius: 20px;
+    // justify-content: space-between;
+}
+
+.image-div{
+    display: flex;
+    border: solid 1px red;
+    height: 230px;
+}
+
+.title-div {
+    display: flex;
+    flex-direction: column;
+    justify-self: flex-end;
+    height: 70px;        
+    border: solid 1px green;
+    padding: 0.5em;
+    justify-content: center;
+}
